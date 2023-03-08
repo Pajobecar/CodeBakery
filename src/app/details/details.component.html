@@ -1,0 +1,19 @@
+<div class="cont">
+  <section class="grid">
+    <div *ngFor="let course of newCourses; index as i">
+      <div class="grid-items shadow rounded-3 d-flex justify-content-center">
+        <div
+          class="p-3 d-flex align-items-center flex-column flex-md-row justify-content-center animate__fadeIn animate__animated animate__slow"
+        >
+          <img src="{{ course.image }}" alt="" />
+          <div class="text-center ms-md-5">
+            <h3>{{ course.name }}</h3>
+            <button routerLink="/details/{{ i }}" [disabled]="course.inCart">
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

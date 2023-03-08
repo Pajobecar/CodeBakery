@@ -1,0 +1,39 @@
+.btn-primary {
+  background-color: #14577c;
+  border-color: #0f4f6a;
+}
+
+.colorChange {
+  color: #19c3ec;
+}
+
+.description {
+  font-weight: 500;
+}
+
+img {
+  object-fit: cover;
+  max-height: 7rem;
+  min-height: 4rem;
+}
+
+.success {
+  height: 20rem;
+  max-height: 20rem;
+}
+
+.page1 {
+  background: #dee8fb;
+  background: linear-gradient(to right, #3c526452, #d3e8f85c);
+  min-height: calc(100vh - 290px);
+  margin-top: -8px;
+}
+
+.pay img {
+  max-height: 4rem;
+}
+
+.price {
+  background-color: #ecfafd;
+  color: #127091;
+}

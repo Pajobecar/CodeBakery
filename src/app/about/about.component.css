@@ -1,0 +1,157 @@
+/* CSS HEX */
+/* --elephant: #0c2c44;
+--loblolly: #bec7ce;
+--bright-turquoise: #19c3ec;
+--slate-gray: #657787;
+--fiord: #3c5264;
+--eastern-blue: #1f85b4;
+--matisse: #127091;
+--chathams-blue: #14577c;
+--chathams-blue: #0f4f6a; */
+
+.card {
+  height: fit-content;
+  margin: 0 auto;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.img-cont {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: white;
+}
+
+.card:hover {
+  border-color: #14587c66;
+  background-color: #14587c2e;
+}
+
+.button_container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+
+.description,
+.link {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+
+.btn {
+  border: none;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15.02px;
+  background-color: #222;
+  padding: 17px 60px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn span {
+  position: relative;
+  z-index: 1;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #1f85b4;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+.link {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.link a {
+  color: #000;
+  font-size: 25px;
+}
+
+.container .abpart {
+  text-align: center;
+}
+
+.container {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 2rem 0rem;
+}
+
+.pos {
+  position: relative;
+  bottom: 5vh;
+}
+
+.font {
+  font-family: "Share Tech Mono", monospace;
+}
+
+.colorr {
+  color: #1f85b4;
+}
+.over {
+  overflow: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  .flex {
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 0;
+  }
+  .card {
+    height: 75vh;
+  }
+
+  .over {
+    width: 50%;
+  }
+  .container {
+    margin-bottom: 10vh;
+  }
+  .card:nth-of-type(4) {
+    margin-bottom: 5vh;
+    background-color: #000;
+  }
+  .sec4 {
+    margin-bottom: 5vh;
+  }
+}

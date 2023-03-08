@@ -1,0 +1,39 @@
+.navbar {
+  background-color: #0c2840;
+  padding: 0;
+  height: 60px;
+  position: fixed !important;
+  width: 100%;
+  z-index: 5;
+}
+
+.container-fluid {
+  background-color: #0c2840;
+  z-index: 9999;
+}
+
+input {
+  background-color: #0c2840;
+  color: white;
+}
+
+input:focus {
+  background-color: #14577c;
+  border-color: #19c3ec;
+  box-shadow: none;
+  color: white;
+}
+
+input::placeholder {
+  color: white;
+}
+
+/* --elephant: #0c2c44;
+--loblolly: #bec7ce;
+--bright-turquoise: #19c3ec;
+--slate-gray: #657787;
+--fiord: #3c5264;
+--eastern-blue: #1f85b4;
+--matisse: #127091;
+--chathams-blue: #14577c;
+--chathams-blue: #0f4f6a; */

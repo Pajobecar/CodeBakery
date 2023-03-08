@@ -1,0 +1,29 @@
+<div class="container">
+  <section class="text-center text-md-start vh-lg-100">
+    <div class="flex">
+      <div class="abpart over wdth" >
+        <h1 class=" display-3 font  animate__fadeInLeft animate__animated animate__delay-1s ">About <span class="colorr"><b class="colorr">CodeBakery</b></span></h1>
+        <button routerLink="/details" class="btn  animate__fadeInLeft animate__animated animate__delay-1s"><span>Check our courses</span></button>
+      </div>
+      <div class="abpart over">
+        <h3 class="p-4 animate__delay-1s animate__fadeInRight animate__animated diss">
+          The Code Bakery Bootcamp is an immersive coding experience designed for
+          aspiring developers. Our program is tailored to equip you with the practical
+          skills and industry knowledge needed to thrive as a software engineer.
+        </h3>
+      </div>
+    </div>
+  </section>
+</div>
+<section>
+  <h1 class="text-center font my-5 animate__fadeInDown animate__animated ">Meet our teachers</h1>
+  <div class="row row-cols-1 row-cols-md-3 row-cols-xl-5 justify-content-center mart mb-5">
+    <div  *ngFor="let trainer of trainers; index as i">
+      <div class="row card col-10 cols-md-10 text-center shadow my-3 animate__fadeInDown animate__animated ">
+        <div class="img-cont mb-4 " style="background-image: url({{trainer.image}});"></div>
+        <h5 class="colorr">{{ trainer.name }}</h5>
+        <p>{{ trainer.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

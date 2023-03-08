@@ -1,0 +1,84 @@
+/* CSS HEX
+--elephant: #0c2c44;
+--loblolly: #bec7ce;
+--bright-turquoise: #19c3ec;
+--slate-gray: #657787;
+--fiord: #3c5264;
+--eastern-blue: #1f85b4;
+--matisse: #127091;
+--chathams-blue: #14577c;
+--chathams-blue: #0f4f6a; */
+
+img {
+  height: 10rem;
+  width: 10rem;
+  object-fit: contain;
+}
+
+button {
+  border: 2px solid #14577c;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 99, 71, 0);
+  transition: all .3s;
+}
+
+button:hover {
+  color: white;
+  border: #127091 2px solid;
+  background-color: #127091;
+  transform: translateX(.5rem);
+}
+
+.grid {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem;
+}
+
+.grid-items {
+  transition: all 0.3s ease 0s;
+  border: gainsboro 1px solid;
+  position: relative;
+  z-index: 2;
+  font-family: 'Share Tech Mono', monospace;
+  text-transform: uppercase;
+  transition: all .4s ease-out;
+}
+
+.grid-items:hover {
+  transform: scale(1.03);
+  background: linear-gradient(to right, #eff6fb, #19c2ec48);
+}
+
+@media screen and (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  section > div:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  section > div:nth-child(10) {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (min-width: 1145px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  section > div:nth-child(10) {
+    grid-column: span 3;
+  }
+
+  section > div:nth-child(7) {
+    grid-column: span 2;
+  }
+
+  section > div:nth-child(8) {
+    grid-column: span 2;
+  }
+}

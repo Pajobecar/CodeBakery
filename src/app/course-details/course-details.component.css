@@ -1,0 +1,109 @@
+/* CSS HEX
+--elephant: #0c2c44;
+--loblolly: #bec7ce;
+--bright-turquoise: #19c3ec;
+--slate-gray: #657787;
+--fiord: #3c5264;
+--eastern-blue: #1f85b4;
+--matisse: #127091;
+--chathams-blue: #14577c;
+--chathams-blue: #0f4f6a; */
+
+.cont {
+  padding: 2rem;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-cont {
+  border-radius: 1.5rem;
+  text-align: center;
+  background: rgb(216, 233, 216);
+  background: linear-gradient(to right, #eff6fb, #19c2ec48);
+  transition: background-color .5s ease-out;
+}
+
+.card-cont:hover {
+  /* background: rgb(216, 233, 216); */
+  background-color: #cbe9fd;
+}
+
+.add {
+  border: 2px solid #14577c;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 99, 71, 0);
+  margin-top: 1rem;
+  transition: all .25s;
+}
+
+.add:hover {
+  color: white;
+  border: #127091 2px solid;
+  background-color: #127091;
+  transform: translateY(.2rem);
+}
+
+.courses {
+  border: 2px solid #19c2ec7a;
+  padding: .5rem;
+  border-radius: .5rem;
+  background-color: rgba(255, 99, 71, 0);
+  margin-top: 1rem;
+  transition: all .25s;
+}
+
+.courses:hover {
+  color: white;
+  border: #19c2ec7a 2px solid;
+  background-color: #19c2ec7a;
+  transform: translateY(.2rem);
+}
+
+.img-cont {
+  height: 15rem;
+  width: 15rem;
+  margin: 1rem auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 968px) {
+  .left-cont {
+    width: 50%;
+    height: 50%;
+  }
+
+  .card-cont {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .add {
+    width: 45%;
+  }
+
+  .courses {
+    width: 45%;
+  }
+
+  .cont {
+    width: 70vw;
+  }
+}

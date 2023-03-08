@@ -1,0 +1,39 @@
+<div class="cont">
+  <div *ngIf="details">
+    <div
+      class="card-cont shadow border p-3 d-flex flex-column flex-md-row align-items-center"
+    >
+      <div class="left-cont">
+        <div
+          class="img-cont"
+          style="background-image: url({{ details.image }});"
+        ></div>
+      </div>
+      <div class="p-4">
+        <h2>{{ details.name }}</h2>
+        <p>{{ details.description }}</p>
+        <div class="d-flex justify-content-between flex-column flex-md-row">
+          <h5 style="width: fit-content; margin: 0.5rem auto">
+            Duration: {{ details.duration }}
+          </h5>
+          <h5 style="width: fit-content; margin: 0.5rem auto">
+            Price: {{ details.price }}€
+          </h5>
+          <h5 style="width: fit-content; margin: 0.5rem auto">
+            Starting: {{ details.start }}
+          </h5>
+        </div>
+        <div class="buttons">
+          <button
+            (click)="addToCart(details)"
+            class="add"
+            [disabled]="details.inCart"
+          >
+            Add to Cart
+          </button>
+          <button routerLink="/details" class="courses">Courses</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

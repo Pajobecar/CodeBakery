@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 91vh;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.div3 {
+  background: url("src\assets\images\heroimg.png") no-repeat center;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+
+.CB {
+  color: #1f85b4;
+  font-family: "Share Tech Mono", monospace;
+  font-size: 3rem;
+}
+
+.text {
+  color: #3c5264;
+}
+
+.description,
+.link {
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+}
+
+.description {
+  font-size: 35px;
+}
+
+.btn {
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  outline: none;
+  overflow: hidden;
+  color: #fff;
+  font-weight: 700;
+  font-size: 15.02px;
+  background-color: #222;
+  padding: 17px 60px;
+  /* margin: 0 auto; */
+  margin: 2rem 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 490%;
+  width: 140%;
+  background: #1f85b4;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn:hover:after {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .div3 {
+    background-size: contain;
+  }
+}

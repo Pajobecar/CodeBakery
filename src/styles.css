@@ -1,0 +1,18 @@
+@import "~animate.css/animate.min";
+
+.dropdown-item:active,
+.dropdown-item.active,
+.dropdown-item:focus,
+.dropdown-item.focus {
+  background-color: #14577c !important;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  overflow-x: hidden;
+  
+}

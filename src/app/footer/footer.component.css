@@ -1,0 +1,21 @@
+footer {
+  background-color: #bec7ce;
+  color: #0c2c44 !important;
+  
+}
+
+img {
+  height: 2rem;
+}
+.dec {
+  text-decoration: none;
+}
+.dec:hover{
+  text-decoration: underline;
+}
+.opa {
+  opacity: 0.7;
+}
+.opa:hover {
+  opacity: 1;
+}
